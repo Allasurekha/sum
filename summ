@@ -1,0 +1,20 @@
++ #include <stdio.h>
+int sum(int num);
+
+int main()
+{
+    int num,result;    
+    printf("enter a num");
+    scanf("%d",&num);
+    result=sum(num);
+   printf("the sum of %d is %d\n",num,result);
+}
+int sum(int num)
+{
+   if(num!=0)
+   {
+   return(num%10+sum(num/10));
+}
+}
+
+
